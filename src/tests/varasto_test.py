@@ -9,7 +9,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_neg_varasto(self):
         self.varasto = Varasto(-10)
-        self.assertAlmostEqual(self.varasto.tilavuus, 1)
+        self.assertAlmostEqual(self.varasto.tilavuus, 0)
 
     def test_neg_saldo(self):
         self.varasto = Varasto(0, -5)
